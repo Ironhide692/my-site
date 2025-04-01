@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/contactForm.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c0552bead7.js" crossorigin="anonymous"></script>
+<title>Contact Jerson</title>
+</head>
+<body>
+
+  <div id="page-container">
+    <div id="content-wrap">
+
+    <!-- Nav Bar -->
+    <section id="title">
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="./index.html">Jerson</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto">
+              <li class="navbar-item">
+                  <a href="./index.html" class="nav-link">Home</a>
+                </li>
+              <li class="navbar-item">
+                <a href="./about.html" class="nav-link">About Me</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./work.html" class="nav-link">My Work</a>
+              </li>
+              <li class="navbar-item">
+                <a href="./contact.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+</section>
+
+<!-- form -->
+<section id="contactForm">
+<div class="container">
+  <span class="big-circle"></span>
+  <img src="img/shape.png" class="square" alt="" />
+  <div class="form">
+    <div class="contact-info">
+      <h3 class="title">Let's get in touch :)</h3>
+      <p class="text">
+        Contact me for questions, inquiries, or comments. I will be happy to assist you 
+        and answer your questions.
+      </p>
+
+
+      <div class="info">
+        <div class="information">
+          <i class= "contact fa-regular fa-envelope"></i>
+          <p>rzsjerson@gmail.com</p>
+        </div>
+        <div class="information">
+          <i class="contact fa-solid fa-square-phone"></i>
+          
+        </div>
+      </div>
+
+      <div class="social-media">
+        <p>Connect with me :</p>
+        <div class="social-icons">
+          <a href="https://www.youtube.com/channel/UCM-LYvV-R9PSQXwKOKyAa6A">
+            <i class="fab fa-youtube"></i>
+            </a>
+          <a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://soundcloud.com/jerson-rivas-780648371">
+            <i class="fab fa-soundcloud"></i>
+          </a>
+          <a href="https://www.instagram.com/jersonrzs/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <span class="circle one"></span>
+      <span class="circle two"></span>
+
+      <form action="https://formsubmit.co/2b59e1ae7667df37fa609ad75ee80585" method="POST">
+        <h3 class="title">Contact me</h3>
+        <div class="input-container">
+          <input type="text" name="name" class="input" />
+          <label for="">Full Name</label>
+          <span>Full Name</span>
+        </div>
+        <div class="input-container">
+          <input type="email" name="email" class="input" />
+          <label for="">Email</label>
+          <span>Email</span>
+        </div>
+        <div class="input-container">
+          <input type="tel" name="phone" class="input" />
+          <label for="">Phone</label>
+          <span>Phone</span>
+        </div>
+        <div class="input-container textarea">
+          <textarea name="message" class="input"></textarea>
+          <label for="">Message</label>
+          <span>Message</span>
+        </div>
+        <input type="submit" value="Send" class="btn"/>
+        <input type="hidden" name="_next" value="./contact.html">
+        <input type="hidden" name="_captcha" value="false">
+    </div>
+  </div>
+</div>
+</section>
+
+</div>
+<!-- Footer -->
+<footer id="footer">
+  <a href="https://www.youtube.com/channel/UCM-LYvV-R9PSQXwKOKyAa6A">
+  <i class="social-icon fa-brands fa-youtube"></i>
+</a>
+<a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/">
+  <i class="social-icon fa-brands fa-linkedin"></i>
+  </a>
+  <a href="https://www.instagram.com/jersonrzs/">
+    <i class="social-icon fa-brands fa-instagram"></i>
+  </a>
+  <a href="https://soundcloud.com/jerson-rivas-780648371">
+  <i class="social-icon fa-brands fa-soundcloud"></i>
+</a>
+  <p>2025 All rights reserved<i class="fa-regular fa-copyright"></i>
+  <br> Made by Jerson</p>
+</footer>
+  </div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="JavaScript/javascript.js" charset="utf-8"></script>
+</body>
+</html>
