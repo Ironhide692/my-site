@@ -1,113 +1,116 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c0552bead7.js" crossorigin="anonymous"></script>
-<title>About Jerson</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Jerson</title>
+  <meta name="description" content="Cinematic portfolio for sound design and music production." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Spectral:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="format-detection" content="telephone=no">
 </head>
-
 <body>
-  <div id="page-container">
-    <div id="content-wrap">
+  <!-- Decorative grid background -->
+  <div class="fx fx--grid" aria-hidden="true"></div>
 
-    <!-- Nav Bar -->
-    <section id="title">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="./index.html">Jerson</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto">
-              <li class="navbar-item">
-                  <a href="./index.html" class="nav-link">Home</a>
-                </li>
-              <li class="navbar-item">
-                <a href="./about.html" class="nav-link">About Me</a>
-              </li>
-              <li class="navbar-item">
-                <a href="./work.html" class="nav-link">My Work</a>
-              </li>
-              <li class="navbar-item">
-                <a href="./contact.html" class="nav-link">Contact</a>
-              </li>
-            </ul>
-        </div>
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header__row">
+      <a href="./index.html" class="brand">JR</a>
+      <nav class="nav" id="siteNav">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./work.html">Work</a>
+          <a class="nav__link" href="./gallery.html" aria-current="page">Gallery</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
       </nav>
-</section>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+ 
+ 
+<!-- About -->
+<section id="about" class="section section--alt">
+  <div class="container about__grid">
+    <div class="about__text">
+      <h2 class="h2">About</h2>
+      <p>
+        Hello, I am <strong>Jerson Rivas</strong>! A musician, producer, and sound designer based in Los Angeles.
+        I recently graduated from UC San Diego with a B.A. in <em>Interdisciplinary Computing in the Arts (Music)</em> and a minor in <em>Computer Science</em>.
+        My process fuses real-world recordings with electronic and acoustic elements to craft experiences that are technical, tactile, and emotionally driven—
+        not only to entertain, but also to provoke thought and reflection.
+      </p>
+      <p>
+        Beyond electronic composition, I am also deeply rooted in live performance. My versatility allows me to move effortlessly between digital
+        production and traditional instrumentation, bringing the same creative energy to both.
+        My drumming has become a defining part of my musical identity, earning recognition by the UC San Diego Musicians Club as Best Drummer (2024, 2025).
+      </p>
+    </div>
 
+    <figure class="portrait about__media">
+      <img src="images/me about.jpeg" alt="Portrait of Jerson">
+    </figure>
 
+    <!-- Skills row spans full width of the grid -->
+    <div class="about__skills">
+  <h3 class="h3" style="margin:0 0 8px">Skills</h3>
+  <div class="chips">
+    <span class="chip">Ableton Live</span>
+    <span class="chip">Pro Tools</span>
+    <span class="chip">Dante</span>
+    <span class="chip">QLab</span>
+    <span class="chip">Field Recording</span>
+    <span class="chip">Live Audio</span>
+    <span class="chip">Mixing</span>
+    <span class="chip">Sound Design</span>
+    <span class="chip">Music Production</span>
+    <span class="chip">Networks</span>
+    <span class="chip">Programming</span>
+  </div>
 
-<div class="col-lg-6">
-  <img class ="title-image" src="images/me about.jpeg" alt="Picture of Jerson Perez">
-</div>
+<details class="skills-details">
+  <summary>
+    View detailed skill descriptions
+    <i class="fa-duotone fa-solid fa-square-caret-down" style="--fa-primary-color: #ebdaec; --fa-primary-opacity: 1; --fa-secondary-color: #6e5ddf; --fa-secondary-opacity: 1;"></i>
+  </summary>
 
-<!--  Abotu ME -->
-<section id="aboutMe">
-  <div class="main">
-  <div class="row">
-    <div class="col-md-6 col-sm-6">
-  <img class="img-responsive" src="images/me about.jpeg">
-</div>
-</div>
-  <div class="about-text">
-    <h1>About <span> Me</span></h1>
-    <p>Hello, I am Jerson, a senior at the University of
-      California San Diego majoring in Interdiciplinary Computing In the Arts under the music department with a minor
-      in Computer Science. I Draw inspiration from a diverse range of influences including rock, J-pop, K-rock, metal, classical
-       and latin music to create immersive auditory experiences that transport listeners into dream-like worlds.</p> 
-
-       <p>My compositions blend real-life sounds with electronic elements, showcasing my expertise in sound design and audio manipulation. 
-       Beyond my electronic compositions, I am also proficient in playing traditional instruments.
-        My versatility allows me to seamlessly switch between electronic and acoustic performances, highlighting my wide-ranging musical abilities.</p>
-
-        <p>My commitment to my craft is reflected in my performances with my band, The Arkangels, where I skillfully merge my technical knowledge and musical talent.
-         Whether I'm playing original compositions or delivering captivating covers, my passion for music shines through, earning me a dedicated following.
-          My outstanding drumming skills were recognized by the UC San Diego Musicians Club, where I was awarded Best Drummer, 
-          underscoring my versatility and excellence in musicianship.</p>
-        
-         <p> I have also done session work for various artists, including Earfall, Teddy Moisa, among others, further demonstrating my adaptability and skill.
-         My music often explores darker and scarier sounds, creating an emotional depth that resonates with listeners. 
-         My ability to weave narratives through sound sets me apart as a musician who not only entertains but also provokes thought and reflection.</p>
-
-
-    <h1>My <span> Skills</span></h1>
+  <div class="skills-panel">
     <ul>
-      <li>Digital Audio Workstation Proficiency:
-        Fluent in Reaper, Ableton Live, Studio One, and some knoweledge of Pro Tools,
-         with hands-on experience in setting up and optimizing audio workflows.</li>
-      <li>Strong understanding of audio signal processing techniques including:
-        Mixing, Compression, EQ, and effects processing.</li>
-      <li>Experience in recording, editing, and processing voiceover tracks tailored for theater productions</li>
-      <li>Familiarity with version control software (Perforce and GIT) to collaborate within development teams.</li>
-      <li>Excellent communication and organization skills</li>
-      <li>Proficiency in multiple programing languages as Java, Python, C, C++, Processing, and Pure Data</li>
-      <li>Experience with Adobe Photoshop and Illustrator</li>
-    </ul>  
+      <li><strong>DAW Proficiency:</strong> Fluent in Ableton Live and Studio One; working knowledge of Pro Tools and Reaper, and a strong grasp of audio workflow optimization.</li>
+      <li><strong>Audio Processing:</strong> Mixing, compression, EQ, and effects processing for studio and live contexts.</li>
+      <li><strong>Voiceover:</strong> Recording, editing, and processing voiceover tracks tailored for theater productions.</li>
+      <li><strong>Version Control:</strong> Perforce and Git for collaborative development.</li>
+      <li><strong>Programming:</strong> Java, Python, C, C++, HTML, CSS Processing, Pure Data.</li>
+      <li><strong>Design:</strong> Adobe Photoshop & Illustrator, Figma, InDesign, Canva.</li>
+    </ul>
+  </div>
+</details>
 
-    
-    <button onclick="window.location.href='./contact.html'">Let's Talk</button>
-      <a href="resume.pdf" download="Jerson_resume">
+
+<br>
+<br>
+
+
+   <!-- Buttons -->
+<button onclick="window.location.href='./contact.html'">Let's Talk</button>
+      <a href="assets/Jerson audio_resume10_25.pdf" download="Jerson_resume">
         <button type="button">Check My Resume</button>
       </a>
-</div>
-</div>
-  </section>
+
+
+<br>
+
+
+      
 
 
 
-  <!-- Education -->
+
+      <!-- Education -->
 <section id="career">
-
-<section education>
   <div class="container">
     <main class="row">
       <!-- education part -->
@@ -121,23 +124,19 @@
             <h4>2020 - 2025</h4>
             <h3>Bachelor's Degree</h3>
             <p>University of California San Diego</p>
-            <p>Bachelor of Arts in Interdiciplinary Computing and the Arts (music) with Computer Science minor</p>
+            <p>B.A. in Interdiciplinary Computing and the Arts (Music), with a Computer Science minor</p>
           </div>
 
           <div class="box">
             <h4>2016 - 2020</h4>
-            <h3>High School Degree</h3>
+            <h3>High School Diploma</h3>
             <p>Performin Arts Community School at Diego Rivera Learning Complex</p>
           </div>
-
         </div>
       </section>
     
       <!-- experience part -->
 
-      <section experience>
-        <div class="container">
-            <!-- education part -->
             <section class="col">
               <header class="title">
                 <h2>EXPERIENCE</h2>
@@ -145,62 +144,51 @@
               <div class="contents">
 
                 <div class="box">
-                  <h4>2025 - Present</h4>
+                  <h4>May 2025 - Oct. 2025</h4>
+                  <h3>The Theatre School @ NCRT</h3>
+                  <p>Sound designer for The Legend of Sleepy Hollow</p>
+                </div>
+
+                <div class="box">
+                  <h4>Jan. 2025 - June 2025</h4>
                   <h3>UCSD Theater Department</h3>
-                  <p>Working as Sound Designer assistant for the grad student theater productions</p>
+                  <p>Sound designer assistant for graduate theater productions</p>
                 </div>
 
                 <div class="box">
-                  <h4>2025</h4>
+                  <h4> Dec. 2024 - May 2025</h4>
                   <h3>Company 157</h3>
-                  <p>Working as Lead Sound Designer for the Wagner New Play Festival</p>
+                  <p>Sound designer assistant, and lead sound designer for the Wagner New Play Festival</p>
                 </div>
       
                 <div class="box">
-                  <h4>2024 - Present</h4>
+                  <h4>Oct. 2024 - Present</h4>
                   <h3>FrightBox Recording</h3>
-                  <p>Part of the mixing and mastering workshop</p>
+                  <p>Mixing and mastering workshop participant</p>
                 </div>
-
-                <div class="box">
-                  <h4>2024</h4>
-                  <h3>Company 157</h3>
-                  <p>Working as Sound Designer assistant for a theater production</p>
-                </div>
-      
-              </div>
             </section>
     </main>
   </div>
 </section>
-</section>
-</section>
 
-    </div>
-<!-- Footer -->
-<footer id="footer">
-  <a href="https://www.youtube.com/channel/UCM-LYvV-R9PSQXwKOKyAa6A">
-  <i class="social-icon fa-brands fa-youtube"></i>
-</a>
-<a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/">
-  <i class="social-icon fa-brands fa-linkedin"></i>
-  </a>
-  <a href="https://www.instagram.com/jersonrzs/">
-    <i class="social-icon fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://soundcloud.com/jerson-rivas-780648371">
-  <i class="social-icon fa-brands fa-soundcloud"></i>
-</a>
-  <p>2025 All rights reserved<i class="fa-regular fa-copyright"></i>
-  <br> Made by Jerson</p>
-</footer>
+
+<br>
+    <footer class="site-footer">
+  <div class="container">
+    <nav class="socials" aria-label="Social media">
+
+     <ul class="list">
+        <li><a href="https://www.youtube.com/@jersonrivass" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><strong></strong> <a href="https://www.instagram.com/jersonrzs/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><strong></strong> <a href="https://www.tiktok.com/@jersonrivass" target="_blank"><i class    ="fa-brands fa-tiktok"></i></a></li>
+        <li><strong></strong> <a href="https://soundcloud.com/jerson-rivas-780648371" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></li>
+        <li><strong></strong> <a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+     </ul>
+
+    <p class="footnote">© <span id="year"></span> Jerson Rivas | All rights reserved</p>
   </div>
+</footer>
 
-<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="JavaScript/javascript.js" charset="utf-8"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

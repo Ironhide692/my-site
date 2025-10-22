@@ -1,134 +1,169 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/c0552bead7.js" crossorigin="anonymous"></script>
-<title>Jerson's Work</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jerson's Work</title>
+  <meta name="description" content="Cinematic portfolio for sound design and music production." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Spectral:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
+  <!-- Decorative grid background -->
+  <div class="fx fx--grid" aria-hidden="true"></div>
 
-  <div id="page-container">
-    <div id="content-wrap">
-
-   <!-- Nav Bar -->
-   <section id="title">
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <a class="navbar-brand" href="./index.html">Jerson</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
-              aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav ml-auto">
-            <li class="navbar-item">
-                <a href="./index.html" class="nav-link">Home</a>
-              </li>
-            <li class="navbar-item">
-              <a href="./about.html" class="nav-link">About Me</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./work.html" class="nav-link">My Work</a>
-            </li>
-            <li class="navbar-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-      </div>
-    </nav>
-</section>
-
-
-<!--  My work -->
-
-<section id="my-work">
-  <div class="container">
-    <h2 class="section-heading" data-outline="Projects">Projects</h2>
-    <div class="all-items">
-
-
-      <div class="item">
-        <div class="left">
-          <div class="img">
-            <img src="images/tell-me-all-about.png" alt="Jerson's single cover image">
-          </div>
-        </div>
-        <div class="right">
-          <h2 class="project-title">Most Recent<span> Song</span></h2>
-          <h3 class="project-sub-title"></h3>
-          <p class="project-desc">This is my first and most recent single titled: Tell Me All About
-          </p>
-          <a href="https://youtu.be/P_7D6dWqpJE?si=x5Yu66AItS1kw_U7"  target="_blank" rel="noopener noreferrer">
-            <button type="button">Take me there</button>
-          </a>
-        </div>
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header__row">
+      <a href="./index.html" class="brand">JR</a>
+      <nav class="nav" id="siteNav">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./work.html">Work</a>
+          <a class="nav__link" href="./gallery.html" aria-current="page">Gallery</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">☰</button>
     </div>
+  </header>
 
 
-    <div class="item">
-      <div class="left">
-        <div class="img">
-          <img src="images/the bench cast.png" alt="image of the bench cast">
+<!-- Work -->
+    <section id="work" class="section">
+      <div class="container">
+        <h2 class="h2">Selected Work</h2>
+
+        <div class="tabs">
+          <button class="tabs__tab is-active" data-target="sd">Sound Design</button>
+          <button class="tabs__tab" data-target="mp">Music Production</button>
         </div>
-      </div>
-      <div class="right">
-        <h2 class="project-title">The Bench <span>Play</span></h2>
-        <p class="project-desc">Recorded Voice Over for the Bench play, and also did the sound design.
-        </p>
-        
-      </div>
-  </div>
 
-  <div class="item">
-    <div class="left">
-      <div class="img">
-        <img src="images/soundcloud.png" alt="image of soundcloud page">
-      </div>
+        <!-- Sound Design cards -->
+       <div id="sd" class="cards grid grid--3">
+  <!-- Sleepy Hollow -->
+  <article class="card">
+    <div class="card__thumb">
+      <img src="images/sleepy-hollow.jpg" alt="Sleepy Hollow artwork">
+      <span class="card__badge">Sound Design</span>
+      <div class="card__overlay"><span>View Project</span></div>
     </div>
-    <div class="right">
-      <h2 class="project-title">Ceck out my <span>SoundCloud</span></h2>
-   
-      <p class="project-desc">
-      </p>
-  <a href="https://soundcloud.com/jerson-rivas-780648371" target="_blank" rel="noopener noreferrer">
-    <button type="button">Take me there</button>
-  </a>
+    <div class="card__body">
+      <h3 class="card__title">Sleepy Hollow</h3>
+      <p class="card__text">Underscore, cue programming (QLab).</p>
+      <audio controls preload="metadata" aria-label="Sleepy Hollow audio sample">
+        <source src="assets/sleepy.mp3" type="audio/mpeg">
+      </audio>
+      <a class="card__button" href="https://example.com/sleepy-hollow" target="_blank" rel="noopener"></a>
     </div>
+  </article>
+
+  <!-- Take Me to the Water -->
+  <article class="card">
+    <div class="card__thumb">
+      <img src="assets/gallery.jpg" alt="Take Me to the Water artwork">
+      <span class="card__badge">Sound Design</span>
+      <div class="card__overlay"><span>View Project</span></div>
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">Take Me to the Water</h3>
+      <p class="card__text">Recording, Co-mixed.</p>
+      <audio controls preload="metadata" aria-label="Take Me to the Water audio sample">
+        <source src="assets/rain.mp3" type="audio/mpeg">
+      </audio>
+      <a class="card__button" href="https://example.com/take-me-to-the-water" target="_blank" rel="noopener"></a>
+    </div>
+  </article>
+
+  <!-- The Bench Play -->
+  <article class="card">
+    <div class="card__thumb">
+      <img src="assets/bench.jpg" alt="The Bench Play artwork">
+      <span class="card__badge">Sound Design</span>
+      <div class="card__overlay"><span>View Project</span></div>
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">The Bench Play</h3>
+      <p class="card__text">VO recording & editing, ambience beds, transitional stingers.</p>
+      <audio controls preload="metadata" aria-label="The Bench Play audio sample">
+        <source src="assets/bench.mp3" type="audio/mpeg">
+      </audio>
+      <a class="card__button" href="https://example.com/the-bench-play" target="_blank" rel="noopener"></a>
+    </div>
+  </article>
 </div>
-  </div>
-  </div>
-</section>
 
 
+
+  <!-- Music cards -->
+    
+     <div id="mp" class="cards grid grid--3 is-hidden">
+  <!-- Echoes of Identity — Album -->
+<a class="card card--link" href="E_linkhub/index.html" target="_blank" rel="noopener" aria-label="Open Echoes of Identity">
+
+    <div class="card__thumb">
+      <img src="assets/wave.jpg" alt="Echoes of Identity album cover">
+      <span class="card__badge">Music</span>
+      <div class="card__overlay"><span>Listen</span></div>
     </div>
-<!-- Footer -->
-<footer id="footer">
-  <a href="https://www.youtube.com/channel/UCM-LYvV-R9PSQXwKOKyAa6A">
-  <i class="social-icon fa-brands fa-youtube"></i>
-</a>
-<a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/">
-  <i class="social-icon fa-brands fa-linkedin"></i>
+    <div class="card__body">
+      <h3 class="card__title">Echoes of Identity — Album</h3>
+      <p class="card__text">Composition, arrangement, recording, mixing, and mastering.</p>
+    </div>
   </a>
-  <a href="https://www.instagram.com/jersonrzs/">
-    <i class="social-icon fa-brands fa-instagram"></i>
-  </a>
-  <a href="https://soundcloud.com/jerson-rivas-780648371">
-  <i class="social-icon fa-brands fa-soundcloud"></i>
-</a>
-  <p>2025 All rights reserved<i class="fa-regular fa-copyright"></i>
-  <br> Made by Jerson</p>
-</footer>
-  </div>
 
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  
+  <!-- “Tell Me All About” — Single -->
+  <a class="card card--link" href="https://open.spotify.com/track/your-track-id" target="_blank" rel="noopener" aria-label="Open 'Tell Me All About' on Spotify">
+    <div class="card__thumb">
+      <img src="images/tell-me-all-about.png" alt="Tell Me All About single cover">
+      <span class="card__badge">Music</span>
+      <div class="card__overlay"><span>Listen</span></div>
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">“Tell Me All About” — Single</h3>
+      <p class="card__text">Composition, arrangement, mixing, and mastering.</p>
+    </div>
+  </a>
+
+  <!-- "Paradox" — Single -->
+  <a class="card card--link" href="https://open.spotify.com/track/your-other-track-id" target="_blank" rel="noopener" aria-label="Open 'Paradox' on Spotify">
+    <div class="card__thumb">
+      <img src="assets/strings.jpg" alt="Paradox single cover">
+      <span class="card__badge">Music</span>
+      <div class="card__overlay"><span>Listen</span></div>
+    </div>
+    <div class="card__body">
+      <h3 class="card__title">"Paradox" — Single</h3>
+      <p class="card__text">Recording, mixing, and mastering.</p>
+    </div>
+  </a>
+</div>
+
+
+    </section>
+
+
+<br>
+  <footer class="site-footer">
+  <div class="container">
+    <nav class="socials" aria-label="Social media">
+
+     <ul class="list">
+        <li><a href="https://www.youtube.com/@jersonrivass" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><strong></strong> <a href="https://www.instagram.com/jersonrzs/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><strong></strong> <a href="https://www.tiktok.com/@jersonrivass" target="_blank"><i class    ="fa-brands fa-tiktok"></i></a></li>
+        <li><strong></strong> <a href="https://soundcloud.com/jerson-rivas-780648371" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></li>
+        <li><strong></strong> <a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+     </ul>
+
+    <p class="footnote">© <span id="year"></span> Jerson Rivas | All rights reserved</p>
+  </div>
+</footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
