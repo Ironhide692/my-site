@@ -131,11 +131,13 @@ a { color: var(--text); text-decoration: none; }
 .btn.spotify:hover   { border-color: #1DB954; }
 .btn.apple:hover     { border-color: #fc3c44; }
 .btn.youtube:hover   { border-color: #ff0033; }
+.btn.youtube-music:hover { border-color: #ff0000; }
 .btn.tidal:hover     { border-color: #00ffff; }
 .btn.bandcamp:hover  { border-color: #629aa9; }
 .btn.amazon:hover    { border-color: #00a8e1; }
 .btn.deezer:hover    { border-color: #ef5466; }
 .btn.soundcloud:hover{ border-color: #ff7700; }
+
 
 /* == Tools (copy/share) =================================================== */
 .tools { display: flex; gap: 10px; margin: 8px 0; }

@@ -45,11 +45,14 @@
     }
 
     /* Make media thumbs a consistent aspect ratio */
-    .card.card--media .card__thumb {
-      position: relative;
-      aspect-ratio: 16 / 9;
-      overflow: hidden;
-    }
+   .card.card--media .card__thumb {
+  position: relative;
+  width: 100%;
+  height: auto;        /* this line is the important one */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+
     .card.card--media .card__thumb img,
     .card.card--media .card__thumb video {
       width: 100%;
@@ -73,12 +76,18 @@
     .gallery__nav i { font-size: 26px; line-height: 1; }   /* bigger chevrons */
     .gallery__nav.prev { left: -6px; }
     .gallery__nav.next { right: -6px; }
-    .gallery__nav:hover {
-      border-color: var(--neon);
-      box-shadow: 0 0 14px rgba(143,124,255,.35);
-      background: rgba(10,12,18,.85);
-    }
-    .gallery__nav:active { transform: translateY(-50%) scale(.97); }
+   /* No movement, just glow */
+.gallery__nav:hover {
+  border-color: var(--neon);
+  box-shadow: 0 0 14px rgba(143,124,255,.35);
+  background: rgba(10,12,18,.85);
+  transform: translateY(-50%); /* KEEP FIXED POSITION */
+}
+
+.gallery__nav:active {
+  transform: translateY(-50%); /* prevent wiggle */
+}
+
 
     /* Hide scrollbar but keep accessibility */
     .gallery__rail::-webkit-scrollbar { height: 8px; }
@@ -142,40 +151,33 @@
           <!-- Card 1 -->
           <article class="card card--media">
             <div class="card__thumb">
-              <img src="assets/live1_sm.jpg" alt="Live at UCSD — drum feature" loading="lazy" />
-              <span class="card__badge">Performance</span>
+              <img src="./images/me-sungod.jpg" alt="Me playing drums at sungod festival" loading="lazy" />
               <div class="card__overlay"><span>View Photo</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Iconic Chronicles — UCSD</h3>
-              <p class="card__text">Drum feature with Musicians Club showcase.</p>
+              <h3 class="card__title">Sungod Festival — UCSD</h3>
             </div>
           </article>
 
           <!-- Card 2 -->
           <article class="card card--media">
             <div class="card__thumb">
-              <img src="assets/live2_sm.jpg" alt="Stage close-up — drumsticks blur" loading="lazy" />
-              <span class="card__badge">Performance</span>
+              <img src="./images/amphitheater.JPEG" alt="Epstein" loading="lazy" />
               <div class="card__overlay"><span>View Photo</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Festival 2025</h3>
-              <p class="card__text">High-energy stage drums and crowd interaction.</p>
+              <h3 class="card__title">Epstein Family Amphitheatre</h3>
             </div>
           </article>
-
 
           <!-- Card 3 -->
           <article class="card card--media">
             <div class="card__thumb">
-              <img src="assets/live2_sm.jpg" alt="Stage close-up — drumsticks blur" loading="lazy" />
-              <span class="card__badge">Performance</span>
+              <img src="./images/me-drum.webp" alt="Me playing drums at sungod lawn" loading="lazy" />
               <div class="card__overlay"><span>View Photo</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Festival 2025</h3>
-              <p class="card__text">High-energy stage drums and crowd interaction.</p>
+              <h3 class="card__title">Sungod Lawn</h3>
             </div>
           </article>
 
@@ -184,13 +186,11 @@
           <!-- Card 4 -->
           <article class="card card--media">
             <div class="card__thumb">
-              <img src="assets/live2_sm.jpg" alt="Stage close-up — drumsticks blur" loading="lazy" />
-              <span class="card__badge">Performance</span>
+              <img src="./images/me-main.webp" alt="eight college" loading="lazy" />
               <div class="card__overlay"><span>View Photo</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Festival 2025</h3>
-              <p class="card__text">High-energy stage drums and crowd interaction.</p>
+              <h3 class="card__title">Stonehenge - UCSD</h3>
             </div>
           </article>
 
@@ -215,18 +215,16 @@
           <article class="card card--media">
             <div class="card__thumb">
               <video
-                src="assets/drums_clip.mp4"
-                poster="assets/drums_poster.jpg"
+                src="./images/sgDrumSolo.mp4"
                 muted
                 playsinline
                 preload="metadata"
               ></video>
-              <span class="card__badge">Live</span>
               <div class="card__overlay"><span>Play Clip</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">The Arkangels — The Loft</h3>
-              <p class="card__text">Rock set — highlights reel.</p>
+              <h3 class="card__title"> Drum Solo — Sungod Festival</h3>
+              <p class="card__text">The Arkangels</p>
             </div>
           </article>
 
@@ -234,18 +232,16 @@
           <article class="card card--media">
             <div class="card__thumb">
               <video
-                src="assets/solo_clip.mp4"
-                poster="assets/solo_poster.jpg"
+                src="./images/devastation.mp4"
                 muted
                 playsinline
                 preload="metadata"
               ></video>
-              <span class="card__badge">Solo</span>
               <div class="card__overlay"><span>Play Clip</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Drum Solo — UCSD Showcase</h3>
-              <p class="card__text">Dynamic solo performance.</p>
+              <h3 class="card__title">Performance at Bear Garden</h3>
+              <p class="card__text">Civilities</p>
             </div>
           </article>
 
@@ -253,18 +249,17 @@
           <article class="card card--media">
             <div class="card__thumb">
               <video
-                src="assets/solo_clip.mp4"
-                poster="assets/solo_poster.jpg"
+                src="./images/bob2024.mp4"
                 muted
                 playsinline
                 preload="metadata"
               ></video>
-              <span class="card__badge">Solo</span>
+
               <div class="card__overlay"><span>Play Clip</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Drum Solo — UCSD Showcase</h3>
-              <p class="card__text">Dynamic solo performance.</p>
+              <h3 class="card__title">Battle of the Bands - Epstein Family Amphitheater</h3>
+              <p class="card__text">The Arkangels</p>
             </div>
           </article>
 
@@ -272,18 +267,16 @@
           <article class="card card--media">
             <div class="card__thumb">
               <video
-                src="assets/solo_clip.mp4"
-                poster="assets/solo_poster.jpg"
+                src="./images/cheCafe.mp4"
                 muted
                 playsinline
                 preload="metadata"
               ></video>
-              <span class="card__badge">Solo</span>
               <div class="card__overlay"><span>Play Clip</span></div>
             </div>
             <div class="card__body">
-              <h3 class="card__title">Drum Solo — UCSD Showcase</h3>
-              <p class="card__text">Dynamic solo performance.</p>
+              <h3 class="card__title">Drum Solo — Che Cafe</h3>
+              <p class="card__text">The Arkangels</p>
             </div>
           </article>
 
@@ -368,5 +361,25 @@
       });
     })();
   </script>
+
+  <!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button class="lightbox__close" aria-label="Close">&times;</button>
+
+  <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous">
+    <i class="fa-solid fa-chevron-left"></i>
+  </button>
+
+  <button class="lightbox__nav lightbox__nav--next" aria-label="Next">
+    <i class="fa-solid fa-chevron-right"></i>
+  </button>
+
+  <div class="lightbox__inner">
+    <img id="lightboxImg" alt="">
+    <video id="lightboxVideo" controls playsinline></video>
+  </div>
+</div>
+
+
 </body>
 </html>

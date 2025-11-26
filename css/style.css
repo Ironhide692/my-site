@@ -571,6 +571,190 @@ button {
 .site-footer .socials .list a:hover i.fa-soundcloud{ color: #ff7700; text-shadow: 0 0 10px rgba(255,119,0,.6); }
 .site-footer .socials .list a:hover i.fa-linkedin  { color: #0A66C2; text-shadow: 0 0 10px rgba(10,102,194,.6); }
 
+
+/* --- Project Page Layout --- */
+
+.project-page {
+  padding-top: 2rem;
+}
+
+/* Back link */
+.project-page .breadcrumb {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.project-page .breadcrumb:hover {
+  opacity: 1;
+}
+
+/* ---------- HERO: text + image ---------- */
+
+.project-hero {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.project-hero__text {
+  flex: 1 1 320px;
+  max-width: 650px;
+}
+
+.project-hero__media {
+  flex: 0 0 auto;
+}
+
+.project-hero__img {
+  width: 100%;
+  max-width: 320px; /* tweak size here */
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Hero typography */
+.project-page .h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-page .project-meta {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.project-page .lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Credits inside hero text block */
+.project-credits {
+  margin-top: 1.3rem;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.project-credits .credits-heading {
+  margin: 0 0 0.25rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.project-credits .credits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-credits .credits-list li {
+  margin: 0;
+}
+
+/* ---------- Sections below hero ---------- */
+
+.project-section {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.project-section > p {
+  margin-bottom: 1rem;
+}
+
+/* Two-column section (Responsibilities / Technical Notes) */
+.project-section--split {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto 3rem;
+}
+
+.project-section--split > div {
+  flex: 1 1 300px;
+}
+
+/* Audio list styling */
+.project-audio-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.project-audio-label {
+  font-size: 0.95rem;
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+}
+
+/* Make sure project text is left-aligned but centered as a block */
+.project-page p,
+.project-page ul,
+.project-page li {
+  text-align: left;
+}
+
+/* ---------- Mobile tweaks ---------- */
+
+@media (max-width: 768px) {
+
+  /* Slightly more breathing room on mobile */
+  .project-page .project-hero,
+  .project-page .project-section,
+  .project-page .project-section--split,
+  .project-page .breadcrumb {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .project-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-hero__text {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .project-hero__media {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .project-hero__img {
+    max-width: 220px; /* smaller on phone */
+    margin-bottom: 1.5rem;
+  }
+
+  .project-section,
+  .project-section--split {
+    max-width: 100%;
+    margin-bottom: 2.5rem;
+  }
+
+  .project-section--split {
+    flex-direction: column;
+  }
+
+
+  
+  
+}
+
+
+
 /* == FX (decorative) ==================================================== */
 .fx.fx--grid {
   position: fixed; inset: 0; pointer-events: none; z-index: 0;
@@ -625,3 +809,134 @@ main.row { display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;
 .toast__close:hover { border-color: var(--neon); transform: translateY(-1px); }
 @keyframes toastIn { from { transform: translateY(8px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
 @keyframes toastOut { from { transform: translateY(0); opacity: 1; } to { transform: translateY(8px); opacity: 0; } }
+
+
+/* General-purpose styled link for project pages */
+.project-link {
+  color: var(--neon);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color .3s ease, text-shadow .3s ease;
+}
+
+.project-link:hover {
+  color: var(--neon-2);
+  text-shadow: 0 0 8px rgba(143,124,255,.4);
+}
+
+/* Mini card style for project pages */
+.mini-card--link {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  border: 1px solid var(--line);
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  text-decoration: none;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.mini-card--link:hover {
+  border-color: var(--neon);
+  box-shadow: 0 0 12px rgba(143,124,255,.35);
+  transform: translateY(-2px);
+}
+
+.mini-card--link img {
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.mini-card__title {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+.mini-card__subtitle {
+  margin: 2px 0 0;
+  font-size: 0.875rem;
+  color: var(--neon);
+  opacity: 0.8;
+}
+
+/* gallery */
+/* ============ Lightbox Overlay ============ */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  padding: 20px;
+  background: rgba(0,0,0,0.85);
+  display: none;                 /* hidden by default */
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.lightbox__inner {
+  max-width: min(1000px, 96vw);
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox__inner img,
+.lightbox__inner video {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 14px;
+  box-shadow: 0 18px 50px rgba(0,0,0,.75);
+}
+
+/* Arrows + Close button (no movement on hover) */
+.lightbox__nav,
+.lightbox__close {
+  position: absolute;
+  border: 1px solid var(--line);
+  background: rgba(10,12,18,0.85);
+  color: var(--text);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: border-color .25s ease, box-shadow .25s ease, background .25s ease;
+}
+
+.lightbox__nav i {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.lightbox__nav--prev { left: 24px; }
+.lightbox__nav--next { right: 24px; }
+
+.lightbox__close {
+  top: 24px;
+  right: 24px;
+  font-size: 26px;
+  line-height: 1;
+}
+
+/* Glow only – no jumping */
+.lightbox__nav:hover,
+.lightbox__close:hover {
+  border-color: var(--neon);
+  box-shadow: 0 0 14px rgba(143,124,255,.35);
+  background: rgba(10,12,18,0.96);
+}
+
+.lightbox__nav:active,
+.lightbox__close:active {
+  transform: none; /* keep them perfectly still */
+}
+

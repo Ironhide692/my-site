@@ -34,118 +34,176 @@
 
 
 <!-- Work -->
-    <section id="work" class="section">
-      <div class="container">
-        <h2 class="h2">Selected Work</h2>
+<section id="work" class="section">
+  <div class="container">
+    <h2 class="h2">Selected Work</h2>
 
-        <div class="tabs">
-          <button class="tabs__tab is-active" data-target="sd">Sound Design</button>
-          <button class="tabs__tab" data-target="mp">Music Production</button>
+    <div class="tabs">
+      <button class="tabs__tab is-active" data-target="sd">Sound Design</button>
+      <button class="tabs__tab" data-target="mp">Music Production</button>
+        <button class="tabs__tab" data-target="cs">Programming Projects</button>
+    </div>
+
+    <!-- Sound Design cards -->
+    <div id="sd" class="cards grid grid--3">
+
+      <!-- Sleepy Hollow -->
+      <a class="card card--link" href="./work/sleepy-hollow.html">
+        <div class="card__thumb">
+          <img src="images/sleepy-hollow.webp" alt="Sleepy Hollow artwork">
+          <span class="card__badge">Theatre</span>
+          <div class="card__overlay"><span>View Project</span></div>
         </div>
+        <div class="card__body">
+          <h3 class="card__title">The Legend of Sleepy Hollow</h3>
+          <p class="card__text">Underscore, cue programming (QLab).</p>
+        </div>
+      </a>
 
-        <!-- Sound Design cards -->
-       <div id="sd" class="cards grid grid--3">
-  <!-- Sleepy Hollow -->
-  <article class="card">
-    <div class="card__thumb">
-      <img src="images/sleepy-hollow.jpg" alt="Sleepy Hollow artwork">
-      <span class="card__badge">Sound Design</span>
-      <div class="card__overlay"><span>View Project</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">Sleepy Hollow</h3>
-      <p class="card__text">Underscore, cue programming (QLab).</p>
-      <audio controls preload="metadata" aria-label="Sleepy Hollow audio sample">
-        <source src="assets/sleepy.mp3" type="audio/mpeg">
-      </audio>
-      <a class="card__button" href="https://example.com/sleepy-hollow" target="_blank" rel="noopener"></a>
-    </div>
-  </article>
+      <!-- Motherloss -->
+      <a class="card card--link" href="./work/motherloss.html">
+        <div class="card__thumb">
+          <img src="./images/motherloss.webp" alt="Motherloss artwork">
+          <span class="card__badge">Theatre</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Motherloss</h3>
+          <p class="card__text">Recording, co-mixing, sound design, routing.</p>
+        </div>
+      </a>
 
-  <!-- Take Me to the Water -->
-  <article class="card">
-    <div class="card__thumb">
-      <img src="assets/gallery.jpg" alt="Take Me to the Water artwork">
-      <span class="card__badge">Sound Design</span>
-      <div class="card__overlay"><span>View Project</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">Motherloss (Take me to the water)</h3>
-      <p class="card__text">Recording, Co-mixed.</p>
-      <audio controls preload="metadata" aria-label="Take Me to the Water audio sample">
-        <source src="assets/rain.mp3" type="audio/mpeg">
-      </audio>
-      <a class="card__button" href="https://example.com/take-me-to-the-water" target="_blank" rel="noopener"></a>
-    </div>
-  </article>
+      <!-- San Diego Native Garden -->
+      <a class="card card--link" href="./work/nativegarden.html">
+        <div class="card__thumb">
+          <img src="./images/Californiapoppy.webp" alt="California Poppy artwork">
+          <span class="card__badge">Soundscape</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">San Diego Native Garden</h3>
+          <p class="card__text">Compositions, recording, mixing.</p>
+        </div>
+      </a>
 
-  <!-- The Bench Play -->
-  <article class="card">
-    <div class="card__thumb">
-      <img src="assets/bench.jpg" alt="The Bench Play artwork">
-      <span class="card__badge">Sound Design</span>
-      <div class="card__overlay"><span>View Project</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">The Bench Play</h3>
-      <p class="card__text">VO recording & editing, ambience beds, transitional stingers.</p>
-      <audio controls preload="metadata" aria-label="The Bench Play audio sample">
-        <source src="assets/bench.mp3" type="audio/mpeg">
-      </audio>
-      <a class="card__button" href="https://example.com/the-bench-play" target="_blank" rel="noopener"></a>
-    </div>
-  </article>
-</div>
+      <!-- The Bench Play -->
+      <a class="card card--link" href="./work/benchplay.html">
+        <div class="card__thumb">
+          <img src="./images/benchplay.webp" alt="The Bench Play artwork">
+          <span class="card__badge">Theatre</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">The Bench Play</h3>
+          <p class="card__text">VO recording & editing, soundtrack composition.</p>
+        </div>
+      </a>
 
+      <!-- Soundcloud -->
+      <a class="card card--link" href="https://soundcloud.com/jerson-rivas-780648371" target="_blank" rel="noopener" aria-label="Open my SoundCloud page">
+        <div class="card__thumb">
+          <img src="./images/soundcloud.png" alt="My soundcloud page">
+          <span class="card__badge">Sound Design</span>
+          <div class="card__overlay"><span>Visit</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Visit my SoundCloud for more</h3>
+          <p class="card__text">Variety of sound design projects.</p>
+        </div>
+      </a>
+    </div> <!-- end #sd -->
 
+    <!-- Music cards -->
+    <div id="mp" class="cards grid grid--3 is-hidden">
 
-  <!-- Music cards -->
-    
-     <div id="mp" class="cards grid grid--3 is-hidden">
-  <!-- Echoes of Identity — Album -->
-<a class="card card--link" href="E_linkhub/index.html" target="_blank" rel="noopener" aria-label="Open Echoes of Identity">
+      <!-- Echoes of Identity — Album -->
+      <a class="card card--link" href="E_linkhub/index.html" target="_blank" rel="noopener" aria-label="Open Echoes of Identity">
+        <div class="card__thumb">
+          <img src="assets/wave.jpg" alt="Echoes of Identity album cover">
+          <span class="card__badge">Album</span>
+          <div class="card__overlay"><span>Listen</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Echoes of Identity</h3>
+          <p class="card__text">Composition, arrangement, recording, mixing, and mastering.</p>
+        </div>
+      </a>
 
-    <div class="card__thumb">
-      <img src="assets/wave.jpg" alt="Echoes of Identity album cover">
-      <span class="card__badge">Music</span>
-      <div class="card__overlay"><span>Listen</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">Echoes of Identity — Album</h3>
-      <p class="card__text">Composition, arrangement, recording, mixing, and mastering.</p>
-    </div>
-  </a>
+      <!-- “Tell Me All About” — Single -->
+      <a class="card card--link" href="./E_linkhub/Tell Me All About.html" target="_blank" rel="noopener" aria-label="Open 'Tell Me All About' on Spotify">
+        <div class="card__thumb">
+          <img src="./images/tell-me-all-about.webp" alt="Tell Me All About single cover">
+          <span class="card__badge">Single</span>
+          <div class="card__overlay"><span>Listen</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Tell Me All About</h3>
+          <p class="card__text">Composition, arrangement, mixing, and mastering.</p>
+        </div>
+      </a>
 
-  
-  <!-- “Tell Me All About” — Single -->
-  <a class="card card--link" href="https://open.spotify.com/track/your-track-id" target="_blank" rel="noopener" aria-label="Open 'Tell Me All About' on Spotify">
-    <div class="card__thumb">
-      <img src="images/tell-me-all-about.png" alt="Tell Me All About single cover">
-      <span class="card__badge">Music</span>
-      <div class="card__overlay"><span>Listen</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">“Tell Me All About” — Single</h3>
-      <p class="card__text">Composition, arrangement, mixing, and mastering.</p>
-    </div>
-  </a>
+      <!-- "Paradox" — Single -->
+      <a class="card card--link" href="https://open.spotify.com/track/your-other-track-id" target="_blank" rel="noopener" aria-label="Open 'Paradox' on Spotify">
+        <div class="card__thumb">
+          <img src="assets/strings.jpg" alt="Paradox single cover">
+          <span class="card__badge">Single</span>
+          <div class="card__overlay"><span>Listen</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Paradox</h3>
+          <p class="card__text">Recording, mixing, and mastering.</p>
+        </div>
+      </a>
 
-  <!-- "Paradox" — Single -->
-  <a class="card card--link" href="https://open.spotify.com/track/your-other-track-id" target="_blank" rel="noopener" aria-label="Open 'Paradox' on Spotify">
-    <div class="card__thumb">
-      <img src="assets/strings.jpg" alt="Paradox single cover">
-      <span class="card__badge">Music</span>
-      <div class="card__overlay"><span>Listen</span></div>
-    </div>
-    <div class="card__body">
-      <h3 class="card__title">"Paradox" — Single</h3>
-      <p class="card__text">Recording, mixing, and mastering.</p>
-    </div>
-  </a>
-</div>
+    </div> <!-- end #mp -->
 
+     <!-- CS / Development cards -->
+    <div id="cs" class="cards grid grid--3 is-hidden">
 
-    </section>
+      <!-- Example CS project 1 -->
+      <a class="card card--link" href="https://github.com/Ironhide692/Digital-pedalboard/tree/main/final" target="_blank" rel="noopener" aria-label="Open Digital guitar pedalboard project">
+        <div class="card__thumb">
+          <img src="./images/pedalboard.png" alt="Pure Data audio tools">
+          <span class="card__badge">PD</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Digital guitar pedalboard</h3>
+          <p class="card__text">Effects created with Pure Data</p>
+        </div>
+      </a>
+
+      <!-- Example CS project 2 -->
+      <a class="card card--link" href="https://ironhide692.github.io/Dice/" target="_blank" rel="noopener" aria-label="Open Dice Game project">
+        <div class="card__thumb">
+          <img src="./images/dice.png" alt="Pure Data audio tools">
+          <span class="card__badge">Dice Game</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Dice game</h3>
+          <p class="card__text">Randomized web dice game made with JavaScript, HTML and CSS</p>
+        </div>
+      </a>
+
+      <!-- Example CS project 3 -->
+      <a class="card card--link" href="https://github.com/Ironhide692/Videogame-in-processing/tree/main/paccybird " target="_blank" rel="noopener" aria-label="Open PaccyBird project">
+        <div class="card__thumb">
+          <img src="images/paccy.png" alt="PaccyBird project">
+          <span class="card__badge">PaccyBird</span>
+          <div class="card__overlay"><span>View Project</span></div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">PaccyBird</h3>
+          <p class="card__text">Small videogame project made using the Processing programming language</p>
+        </div>
+      </a>
+
+    </div> <!-- end #cs -->
+
+  </div> <!-- end .container -->
+</section>
+
 
 
 <br>

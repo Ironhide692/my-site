@@ -17,6 +17,11 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
 
+    <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../favicon_io/favicon.ico">
+
+  <meta name="format-detection" content="telephone=no">
+
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,51 +51,81 @@
         <h1 id="album-title"><span class="eyebrow">Album</span> Echoes of Identity</h1>
         <p class="artist">by <strong>Jerson Rivas</strong></p>
 
-        <audio controls preload="metadata" class="preview">
-          <source src="assets/preview.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-
         <!-- Platform Buttons -->
         <div class="btns">
-          <a class="btn spotify"   href="#" data-source="spotify"   target="_blank" rel="noopener" aria-label="Spotify">
+       
+<a class="btn spotify"
+             href="https://open.spotify.com/track/6iRi61cGr2gcbpsORiYMgs?si=b8dd55d1614a4cf6"
+             data-source="spotify"
+             target="_blank"
+             rel="noopener"
+             aria-label="Listen on Spotify">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0a12 12 0 1 0 0 24A12 12 0 1 0 12 0Zm5.28 17.28c-.23.34-.66.45-1.02.24-2.8-1.7-6.33-2.08-10.49-1.12-.4.1-.81-.15-.9-.55a.72.72 0 0 1 .54-.88c4.5-1.02 8.35-.58 11.39 1.26.36.22.47.67.25 1.05Zm1.45-3.2c-.28.42-.84.56-1.27.3-3.2-1.97-8.1-2.54-11.9-1.37-.48.15-.99-.12-1.14-.6-.15-.48.12-.99.6-1.14 4.3-1.34 9.64-.7 13.32 1.56.43.26.56.83.3 1.25Zm.13-3.33c-3.83-2.27-10.2-2.48-13.87-1.33a.9.9 0 0 1-1.12-.6.9.9 0 0 1 .6-1.12c4.2-1.33 11.14-1.07 15.42 1.48a.9.9 0 0 1-.92 1.57Z"/></svg>
             Spotify
           </a>
 
-          <a class="btn apple"     href="#" data-source="apple"     target="_blank" rel="noopener" aria-label="Apple Music">
+          <!-- Apple Music -->
+          <a class="btn apple"
+             href="https://music.apple.com/us/album/tell-me-all-about-feat-esteban-rivas-single/1740588319"
+             data-source="apple"
+             target="_blank"
+             rel="noopener"
+             aria-label="Listen on Apple Music">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.36 1.64a.75.75 0 0 1 .64.73v14.26a3.73 3.73 0 0 1-5.7 3.15 3.73 3.73 0 0 0-3.59-.2 3.73 3.73 0 0 1-1.86.49A3.75 3.75 0 0 1 2 16.32c0-1.94 1.57-3.52 3.5-3.52.66 0 1.28.18 1.81.5V5.14c0-.33.22-.62.54-.71l8.2-2.3a.75.75 0 0 1 .31 0Z"/></svg>
             Apple Music
           </a>
 
-          <a class="btn youtube"   href="#" data-source="youtube"   target="_blank" rel="noopener" aria-label="YouTube Music">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.3 3.5 12 3.5 12 3.5s-7.3 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8.3 0 12 0 12s0 3.7.5 5.8a3 3 0 0 0 2.1 2.1c2.1.6 9.4.6 9.4.6s7.3 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8ZM9.6 15.5V8.5l6.2 3.5-6.2 3.5Z"/></svg>
-            YouTube
+         <!-- YouTube Music (audio) -->
+        <a class="btn youtube-music"
+        href="https://music.youtube.com/watch?v=KQD_R8SukMI"
+        target="_blank" rel="noopener">
+
+  <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+    <circle cx="12" cy="12" r="10" fill="currentColor"/>
+    <polygon points="10,8 16,12 10,16" fill="var(--bg)"/>
+  </svg>
+
+  YouTube Music
+</a>
+
+
+          <!-- YouTube (music video) -->
+          <a class="btn youtube"
+             href="https://www.youtube.com/watch?v=P_7D6dWqpJE"
+             data-source="youtube-video"
+             target="_blank"
+             rel="noopener"
+             aria-label="Watch the music video on YouTube">
+            <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+            YouTube (Video)
           </a>
 
-          <a class="btn tidal"     href="#" data-source="tidal"     target="_blank" rel="noopener" aria-label="Tidal">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6 12 0l6 6-6 6-6-6Zm0 12 6-6 6 6-6 6-6-6Z"/></svg>
-            Tidal
-          </a>
-
-          <a class="btn bandcamp"  href="#" data-source="bandcamp"  target="_blank" rel="noopener" aria-label="Bandcamp">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.5 6h9L16.5 18h-9L7.5 6Z"/></svg>
-            Bandcamp
-          </a>
-
-          <a class="btn amazon"    href="#" data-source="amazon"    target="_blank" rel="noopener" aria-label="Amazon Music">
+          <!-- Amazon Music -->
+          <a class="btn amazon"
+             href="https://music.amazon.com.au/tracks/B0D1CTQ7R6?marketplaceId=A39IBJ37TRP1C6&musicTerritory=AU&ref=dm_sh_pNt0FcC0uutpSI54XEXaSxV9I"
+             data-source="amazon"
+             target="_blank"
+             rel="noopener"
+             aria-label="Listen on Amazon Music">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19c4 3 12 3 16-1-5 2-11 2-16-1Zm15-3c-4 2-8 2-12-.5C9 17 15 17 19 16Z"/></svg>
-            Amazon
+            Amazon Music
           </a>
 
-          <a class="btn deezer"    href="#" data-source="deezer"    target="_blank" rel="noopener" aria-label="Deezer">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="14" width="2" height="6"/><rect x="6" y="10" width="2" height="10"/><rect x="10" y="6" width="2" height="14"/><rect x="14" y="4" width="2" height="16"/><rect x="18" y="8" width="2" height="12"/></svg>
+          <!-- Deezer -->
+          <a class="btn deezer"
+             href="https://www.deezer.com/en/album/572208401"
+             data-source="deezer"
+             target="_blank"
+             rel="noopener"
+             aria-label="Listen on Deezer">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="2"  y="14" width="2" height="6"/>
+              <rect x="6"  y="10" width="2" height="10"/>
+              <rect x="10" y="6"  width="2" height="14"/>
+              <rect x="14" y="4"  width="2" height="16"/>
+              <rect x="18" y="8"  width="2" height="12"/>
+            </svg>
             Deezer
-          </a>
-
-          <a class="btn soundcloud" href="#" data-source="soundcloud" target="_blank" rel="noopener" aria-label="SoundCloud">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 6a6 6 0 0 1 5.3 3 3.7 3.7 0 0 1 1.2-.2c2 0 3.5 1.5 3.5 3.5S18.5 16 16.5 16H7a3 3 0 1 1 3-10Z"/></svg>
-            SoundCloud
           </a>
         </div>
 
@@ -115,8 +150,8 @@
       <li>Through Your Eyes</li>
       <li>Forgot Your Voice</li>
       <li>Interlude</li>
-      <li>The Strength Again</li>
-      <li>Door</li>
+      <li>If Only I Called</li>
+      <li>Crossing</li>
       <li>Ignite the Flame</li>
     </ol>
   </div>
