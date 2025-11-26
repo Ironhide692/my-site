@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jerson</title>
+  <meta name="description" content="Cinematic portfolio for sound design and music production." />
+  <link rel="icon" type="image/x-icon" href="favicon_io/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Spectral:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <meta name="format-detection" content="telephone=no">
+</head>
+<body>
+  <!-- Decorative grid background -->
+  <div class="fx fx--grid" aria-hidden="true"></div>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header__row">
+      <a href="./index.html" class="brand">JR</a>
+      <nav class="nav" id="siteNav">
+        <a class="nav__link" href="./index.html">Home</a>
+        <a class="nav__link" href="./about.html">About</a>
+        <a class="nav__link" href="./work.html">Work</a>
+         <a class="nav__link" href="./gallery.html" aria-current="page">Gallery</a>
+        <a class="nav__link" href="./contact.html">Contact</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="siteNav" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ Main ============ -->
+  <main>
+
+
+    
+
+  <!-- Hero -->
+
+
+<section
+  id="hero"
+  class="section hero hero--bgphoto hero--left"
+  style="
+    --hero-photo-opacity:.45;
+    --hero-photo-opacity-lg:.45;
+    --hero-object-x:50%;   
+    --hero-object-y:50%;  
+    --marquee-offset:10px;
+    --trim-bottom: 80px; 
+      
+
+
+     --hero-min-h: 92vh;      /* show more of the image */
+    --trim-bottom: 1vh;      /* trim the extra so no scroll */
+  ">
+  <img class="hero__bgphoto" src="images/SGF.jpg" alt="" aria-hidden="true">
+
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="container hero__inner">
+    <h1 class="display-1"><span class="text-glow">Jerson Rivas</span></h1>
+    <p class="lead">Drumming | Music Production | Sound Design</p>
+    <div class="buttons">
+      <a href="work.html" class="button">See Selected Work</a>
+      <a href="#reel" class="button">Watch Reel</a>
+    </div>
+  </div>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Field Recordings • QLab • Ableton Live • Pro Tools • Dante • Synthesis • Pure Data • Mixing • Mastering • QSC • Q-SYS</span>
+      <span>Field Recordings • QLab • Ableton Live • Pro Tools • Dante • Synthesis • Pure Data • Mixing • Mastering • QSC • Q-SYS</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+   <!-- Reel -->
+    <section id="reel" class="section">
+      <div class="container">
+        <h2 class="h2">Demo Reel</h2>
+        <p class="lead">Under maintenance. Will be back soon.</p>
+        <div class="player">
+          <video controls preload="metadata" poster="assets/reel-poster.jpg">
+            <source src="assets/reel.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+  <br>
+<footer class="site-footer">
+  <div class="container">
+    <nav class="socials" aria-label="Social media">
+
+     <ul class="list">
+        <li><a href="https://www.youtube.com/@jersonrivass" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><strong></strong> <a href="https://www.instagram.com/jersonrzs/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><strong></strong> <a href="https://www.tiktok.com/@jersonrivass" target="_blank"><i class    ="fa-brands fa-tiktok"></i></a></li>
+        <li><strong></strong> <a href="https://soundcloud.com/jerson-rivas-780648371" target="_blank"><i class="fa-brands fa-soundcloud"></i></a></li>
+        <li><strong></strong> <a href="https://www.linkedin.com/in/jerson-perez-a0ab49135/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+     </ul>
+
+    <p class="footnote">© <span id="year"></span> Jerson Rivas | All rights reserved</p>
+  </div>
+</footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
