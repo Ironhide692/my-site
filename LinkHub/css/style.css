@@ -356,3 +356,10 @@ a { color: var(--text); text-decoration: none; }
   color: var(--neon);
 }
 
+.credits-note {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.5;
+  max-width: 520px;
+}

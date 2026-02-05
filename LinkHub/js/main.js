@@ -36,7 +36,10 @@
 (function(){
   const copyBtn = document.getElementById('copyBtn');
   const shareBtn = document.getElementById('shareBtn');
-  const shareUrl = location.href;
+  const shareUrl = location.origin + location.pathname;
+  if (location.hash) {
+    history.replaceState(null, '', shareUrl);
+  }
   if (copyBtn){
     copyBtn.addEventListener('click', async () => {
       try{ await navigator.clipboard.writeText(shareUrl);
